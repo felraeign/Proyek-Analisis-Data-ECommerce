@@ -1,1 +1,1 @@
-https://ecommercedashboardanalytic.streamlit.app/
+https://analyticsdashboardecommerce.streamlit.app/
