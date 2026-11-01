@@ -1,14 +1,35 @@
-# E-Commerce Executive Analytics Dashboard 
+# Proyek Analisis Data: E-Commerce Public Dataset
 
 Proyek analisis data ini menggunakan dataset publik E-Commerce (Brasil) untuk menyajikan *dashboard* analitik interaktif tingkat eksekutif. Fokus utama dari proyek ini adalah menjawab tiga pilar analisis bisnis strategis:
-1. **Performa Kategori Produk (Q4 2017):** Evaluasi kategori produk terlaris (*Cash Cows*) dan produk dengan performa terendah (*Underperformers*).
-2. **Preferensi Pembayaran (2018):** Analisis volume transaksi dan *Average Order Value* (AOV) berdasarkan metode pembayaran.
-3. **Kinerja Logistik (São Paulo, 2018):** Evaluasi dampak keterlambatan *Service Level Agreement* (SLA) pengiriman terhadap *Customer Satisfaction Score* (CSAT).
+1. **Performa Kategori Produk:** Evaluasi kategori produk terlaris dan terendah sebagai dasar alokasi anggaran pemasaran.
+2. **Preferensi Pembayaran:** Analisis volume transaksi dan rata-rata nilai pesanan untuk optimalisasi payment gateway.
+3. **Kinerja Logistik:** Evaluasi dampak keterlambatan pengiriman terhadap kepuasan pelanggan sebagai dasar evaluasi mitra logistik.
 
+## Setup Environment - Anaconda
+```bash
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+
+```
+
+## Setup Environment - Shell/Terminal
+
+```bash
+pip install -r requirements.txt
+
+```
+
+## Run Streamlit App
+
+```bash
+streamlit run dashboard/dashboard.py
+
+```
 
 ## Struktur Direktori Proyek
 
-Pastikan susunan folder dan file Anda di GitHub sama persis dengan struktur berikut agar path dataset terbaca dengan benar oleh program:
+Pastikan susunan folder dan file Anda di GitHub sama persis dengan struktur berikut:
 
 ```text
 Proyek_Analisis_Data/
@@ -28,33 +49,4 @@ Proyek_Analisis_Data/
 ├── url.txt
 └── README.md
 
-
 ```
-
----
-
-## Cara Menjalankan Proyek
-
-### 1. Instalasi Dependensi
-
-Buka terminal atau Command Prompt pada direktori proyek Anda, lalu jalankan perintah berikut untuk menginstal seluruh *library* Python yang dibutuhkan (Pandas, Streamlit, dan Plotly):
-
-```bash
-pip install -r requirements.txt
-
-```
-
-*(Atau jika menggunakan Windows Python Launcher: `py -m pip install -r requirements.txt`)*
-
-### 2. Menjalankan Dashboard Streamlit
-
-Setelah proses instalasi selesai, jalankan *server* Streamlit dengan mengarahkan eksekusi ke dalam folder `dashboard`:
-
-```bash
-py -m streamlit run dashboard/dashboard.py
-
-```
-
-*(Atau menggunakan perintah Windows: `py -m streamlit run dashboard/dashboard.py`)*
-
-*Dashboard* interaktif akan terbuka secara otomatis di *browser* utama Anda (biasanya pada alamat `http://localhost:8501`).
